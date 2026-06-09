@@ -162,7 +162,7 @@ exoplanet-predictions-2026/
 
 - **Researcher:** Aleksandrs Pasinskis
 - **Organization:** QRCL Technologies OÜ
-- **Email:** pasinskis@gmail.com
+- **Email:** info@qrcl.net
 - **Location:** Tallinn, Estonia
 
 ---

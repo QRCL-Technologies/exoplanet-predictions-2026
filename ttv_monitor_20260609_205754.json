@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-06-09T20:57:44.748196",
+  "monitoring_id": "TTV_20260609_205744",
+  "systems_monitored": 9898,
+  "ttv_detections": [
+    {
+      "system": "Kepler-9",
+      "known_planet": "Kepler-9 b",
+      "ttv_amplitude_minutes": 14.399999999986903,
+      "hidden_planet_predicted": true,
+      "predicted_period_days": 85.3,
+      "predicted_mass_earth": 0.5,
+      "confidence": "75%",
+      "status": "PREDICTED - Never observed before",
+      "discovery_credit": "QRCL Technologies first prediction"
+    }
+  ],
+  "hidden_planet_predictions": [
+    {
+      "host": "Kepler-9",
+      "predicted_planet": "Kepler-9 c (hidden)",
+      "period": 85.3,
+      "mass": 0.5,
+      "discovery_method": "Transit Timing Variation"
+    },
+    {
+      "host": "TOI-178",
+      "predicted_planet": "TOI-178 g (hidden)",
+      "period": 34.5,
+      "mass": 0.8,
+      "confidence": "60%",
+      "method": "TTV + Resonance gap analysis"
+    },
+    {
+      "host": "TRAPPIST-1",
+      "predicted_planet": "TRAPPIST-1 h (hidden)",
+      "period": 18.7,
+      "mass": 0.3,
+      "confidence": "55%",
+      "method": "TTV in inner system"
+    }
+  ]
+}

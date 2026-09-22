@@ -1,6 +1,5 @@
 """Local LLM client for Ollama and Mistral."""
 
-import json
 import logging
 from abc import ABC, abstractmethod
 from typing import Optional

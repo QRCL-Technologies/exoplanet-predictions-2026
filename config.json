@@ -1,0 +1,66 @@
+{
+  "environment": "development",
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "local_models": {
+    "enabled": true,
+    "type": "ollama",
+    "endpoint": "http://localhost:11434",
+    "model": "mistral",
+    "timeout": 30,
+    "fallback_to_cloud": false
+  },
+  "results": {
+    "storage_dir": "results",
+    "export_formats": ["json", "csv", "html"],
+    "retention_days": 30
+  },
+  "audits": {
+    "enabled": true,
+    "types": ["security", "code_quality", "performance", "compliance"],
+    "severity_levels": ["info", "warning", "error", "critical"],
+    "auto_run": false,
+    "use_llm": true
+  },
+  "tests": {
+    "discovery": {
+      "paths": ["tests"],
+      "patterns": ["test_*.py", "*_test.py"]
+    },
+    "execution": {
+      "parallel": true,
+      "timeout": 300,
+      "retry_count": 0
+    },
+    "coverage": {
+      "enabled": true,
+      "min_coverage": 80
+    }
+  },
+  "uspto": {
+    "api_key": "${USPTO_API_KEY}",
+    "base_url": "https://developer.uspto.gov/ibd-api/v1",
+    "timeout": 30,
+    "cache_ttl": 3600,
+    "portfolio_tracking": true
+  },
+  "network": {
+    "monitoring": {
+      "enabled": true,
+      "check_interval": 60,
+      "timeout": 5
+    },
+    "endpoints": [
+      {
+        "name": "localhost",
+        "url": "http://localhost:8000"
+      }
+    ],
+    "topology": {
+      "enabled": false,
+      "export_format": "json"
+    }
+  }
+}
